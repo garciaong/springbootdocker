@@ -1,0 +1,11 @@
+docker build -t dockerapp .
+docker rmi -f <image id>
+docker run -d -p 80:8080 --name <container name> <image name>
+
+docker-compose build
+docker-compose up
+docker-compose stop
+
+docker volume prune
+
+host to docker ip 192.168.99.100

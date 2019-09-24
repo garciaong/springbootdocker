@@ -1,0 +1,14 @@
+docker build -t dockerdata .
+docker rmi -f <image id>
+docker run -d -p 81:8080 --name <container name> <image name>
+docker run -d -p 81:8080 -v /d/myapp:/log --name dockerdata dockerdata
+
+docker exec -it <container name> ls
+
+docker-compose build
+docker-compose up
+docker-compose stop
+
+docker volume prune
+
+host to docker ip 192.168.99.100
